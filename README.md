@@ -41,7 +41,8 @@ El plugin incorpora un widget para colocar el botón en los sidebars. El widget 
 
 Cuando un usuario clique en el botón/enlace para descargar el fichero, tendrá que aceptar dar acceso al sitio web para publicar el tweet asociado al botón, una vez publicado correctamente, la descarga se lanza automáticamente.
 
-    El plugin no almacena el access_token del usuario por lo que el plugin no podrá publicar tweets en la cuenta del usuario en ningún momento salvo cuando el usuario, expresamente, clica en descargar fichero.
+    El plugin no almacena el access_token del usuario por lo que el plugin no podrá publicar tweets en la cuenta 
+    del usuario en ningún momento salvo cuando el usuario, expresamente, clica en descargar fichero.
 
 ### Estadísticas
 
@@ -76,3 +77,7 @@ Se busca, especialmente, contribuciones destinadas a aumentar el listado de idio
 
 Aunque el plugin ha sido probado, es habitual que se nos escapen cosas. Si encuentras algún error o se te ocurre alguna mejora siéntete libre de contactar con el autor, cualquier ayuda o idea siempre es bienvenida.
 
+## Créditos
+
+Autor: Rolando Caldas Sánchez - http://rolandocaldas.com
+GitHub: https://github.com/rolando-caldas/pay-with-a-tweet-wp-plugin/
