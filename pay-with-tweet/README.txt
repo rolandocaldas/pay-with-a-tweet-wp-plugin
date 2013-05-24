@@ -4,7 +4,7 @@ Donate link:
 Tags: social, viral, social marketing, viral marketing, twitter, download, pay with a tweet, tweet to download, tweet and get it, plugin, plugins, shortcode, shortcodes, widget, widgets
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 1.0
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,43 +50,43 @@ Initial version
 
 = Configuración =
 
-Para poder utilizar el plugin es necesario crear una aplicación en Twitter e incorporar el `consumer key` y el `consumer secret`.
+To use the plugin you must create a Twitter application and add the `key consumer` and `consumer secret`.
 
-A la hora de crear la aplicación es necesario establecer correctamente la `callback URL`. Esta dirección se encuentra en la [pantalla de configuración](http://www.example.com/wp-admin/admin.php?page=pay-with-tweet/admin/pwt-config.php) del plugin.
+When creating the Twitter application is necessary to properly set the `callback URL`. This address is in the plugin [Configuration screen](http://www.example.com/wp-admin/admin.php?page=pay-with-tweet/admin/pwt-config.php).
 
-= Gestor de descargas =
+= Manage downloads =
 
-* Los ficheros destinados a ser utilizados en "Pay with a Tweet" se suben desde una pantalla de la administración.
-* Para la subida de archivos se utiliza el sistema de subida de archivos de WordPress.
-* Los archivos subidos no forman parte del gestor de medios de WordPress.
-* Los archivos no son accesibles vía web.
-* Cuando se elimina un archivo se eliminan todos los botones que la utilizan.
-* Acceso a la creación de un botón desde la subida de archivos.
+* Files for use on "Pay with a Tweet" will be uploaded from the [upload files screen](http://www.example.com/wp-admin/admin.php?page=pay-with-tweet/admin/pwt-upload.php).
+* For uploading files using the file upload system WordPress.
+* The uploaded files are not part of the WordPress media manager.
+* Files are not accessible via web.
+* When you delete a file removes all the buttons that use it.
+* Access to the creation of a button from the file upload.
 
-= Gestor de botones =
+= Manage buttons =
 
-* Cada botón creado se vincula a un archivo. Pueden existir varios botones vinculados al mismo archivo.
-* En cada botón se puede establecer un título, la imagen a utilizar como botón y el texto a publicar como tweet.
-* Los botones se pueden eliminar o eliminar permanentemente. Esta segunda opción eliminará también la imagen y el archivo del botón.
+* Each button created is linked to a file. There can be multiple buttons linked to the same file.
+* Each button can set a title, the button image to use as button and the text to publish as tweet.
+* The buttons can be deleted or permanently delete. This second option will delete the image and file.
 
-= Soporte a varios idiomas =
+= Multiple languages support =
 
-El plugin incorpora el idioma inglés y español. Además, en el directorio pay-with-a-tweet-wp-plugin/tree/master/pay-with-tweet/languages se puede obtener el fichero .po para realizar la traducción en otros idiomas
-
-= Shortcodes =
-
-El plugin incorpora un shortcode estilo `[pwt id='']` para poder incorporar el botón en cualquier lugar de una entrada o página.
+The plugin includes English and Spanish. Furthermore, in pay-with-a-tweet-wp-plugin/tree/master/pay-with-tweet/languages ​​directory the .po is available for translation in other languages
 
 = Shortcodes =
 
-El plugin incorpora un widget para colocar el botón en los sidebars. El widget permite introducir un título, un texto a mostrar antes del botón y un desplegable con los botones disponibles para seleccionar el deseado.
+The plugin includes the shortcode `[pwt id ='']` to add the button anywhere in a post or page.
 
-= Proceso de descarga =
+= Widget =
 
-Cuando un usuario clique en el botón/enlace para descargar el fichero, tendrá que aceptar dar acceso al sitio web para publicar el tweet asociado al botón, una vez publicado correctamente, la descarga se lanza automáticamente.
+The plugin includes a widget to place the button on the sidebars. The widget allows you to enter a title, a text to display before the button and a dropdown to select the desired button.
 
-`El plugin no almacena el access_token del usuario por lo que el plugin no podrá publicar tweets en la cuenta del usuario en ningún momento salvo cuando el usuario, expresamente, clica en descargar fichero.`
+= Download process =
 
-= Estadísticas =
+When a user click on the button/link to download the file, he must accept to access the website to post the tweet associated with the button, once properly released, the download is automatically launched.
 
-* Cuando se descarga un fichero a través de un botón de pay with a tweet, se guarda la referencia de esta descarga con fines estadísticos. 
+`The plugin does not store the user's access_token so the plugin may not post tweets in the user's account at any time unless the user expressly click on download file.`
+
+= Stats =
+
+* When somebody download a file via a button pay with a tweet, reference is stored (in your WP database) for statistical purposes.

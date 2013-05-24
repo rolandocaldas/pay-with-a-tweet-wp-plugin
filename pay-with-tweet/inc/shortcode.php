@@ -34,7 +34,7 @@ function pwt_shortcode_func($atts) {
     
     $shortcode = $wpdb->get_results("SELECT *  FROM " . $wpdb->prefix . "pwt_button WHERE id='" . intval($atts['id']) . "'");
     if (!empty($shortcode) && is_array($shortcode) && !empty($shortcode[0])) {
-        $return = '<a href="' . PWT_PLUGIN_URL . 'download.php?id=' . $shortcode[0]->id . '&amp;action=get_access" target="_blank">';
+        $return = '<a href="' . get_option('siteurl') . '/' . PWT_PLUGIN . '/download/?id=' . $shortcode[0]->id . '&amp;action=get_access" target="_blank">';
         if (!empty($shortcode[0]->image) && file_exists(PWT_PLUGIN_UPLOAD_DIR . '/images/' . $shortcode[0]->image)) {
             $return .= '<img src="' . PWT_PLUGIN_UPLOAD_URL . '/images/' . $shortcode[0]->image . '" 
                                 alt="' . sprintf(__('Pay with a Tweet to download %s', PWT_PLUGIN), $shortcode[0]->name) . '"

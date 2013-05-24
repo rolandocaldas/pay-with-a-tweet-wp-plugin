@@ -145,12 +145,12 @@ class Pwt_Widget extends WP_Widget {
                         <?php echo $text; ?>
                     <?php if (!empty($shortcode)) { ?>
                         <?php if (!empty($shortcode[0]->image) && file_exists(PWT_PLUGIN_UPLOAD_DIR . '/images/' . $shortcode[0]->image)) { ?>
-                        <a href="<?php print PWT_PLUGIN_URL; ?>download.php?id=<?php print $shortcode[0]->id; ?>&amp;action=get_access" target="_blank"><img 
+                        <a href="<?php print get_option('siteurl'); ?>/<?php print PWT_PLUGIN; ?>/download/?id=<?php print $shortcode[0]->id; ?>&amp;action=get_access" target="_blank"><img 
                                 src="<?php print PWT_PLUGIN_UPLOAD_URL . '/images/' . $shortcode[0]->image ; ?>" 
                                 alt="<?php print sprintf(__('Download %s', PWT_PLUGIN), $shortcode[0]->name); ?>"
                                 title="<?php print sprintf(__('Download %s', PWT_PLUGIN), $shortcode[0]->name); ?>" /></a>
                         <?php } else { ?>
-                        <a href="<?php print PWT_PLUGIN_URL; ?>download.php?id=<?php print $shortcode[0]->id; ?>&amp;action=get_access" 
+                        <a href="<?php print get_option('siteurl'); ?>/<?php print PWT_PLUGIN; ?>/download/?id=<?php print $shortcode[0]->id; ?>&amp;action=get_access" 
                            target="_blank"><?php print sprintf(__('Download %s', PWT_PLUGIN), $shortcode[0]->name); ?></a>
                         <?php } ?>
                     <?php } ?>

@@ -58,7 +58,7 @@ $consumersecret = get_option(PWT_PLUGIN . '_twitter_consumersecret', '');
                 <tr valign="top">
                     <th scope="row">Callback URL</th>
                     <td>
-                        <?php print PWT_PLUGIN_URL; ?>download.php
+                        <?php print get_option('siteurl'); ?>/<?php print PWT_PLUGIN; ?>/download/
                     </td>
                 </tr>
                 
