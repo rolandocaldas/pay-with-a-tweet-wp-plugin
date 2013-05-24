@@ -8,11 +8,11 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin does not need services of others, unless of course Twitter.
+Allow your visitors to download files after publishing a tweet on his twitter account.
 
 == Description ==
 
-Create buttons so that your visitors can download files after posting on his twitter the message you choose. You can display different buttons using shortcodes or the widget included.
+This plugin does not need services of others, unless of course Twitter. Create buttons so that your visitors can download files after posting on his twitter the message you choose. You can display different buttons using shortcodes or the widget included.
 
 
 == Installation ==
