@@ -64,12 +64,13 @@ function pwt_download() {
     switch ($action) {
 
         case 'get_access':
+            if (isset($_COOKIE['oauth_pid'])) {
+                setcookie('oauth_token', '', -1);
+                setcookie('oauth_token_secret', '', -1);
+                setcookie('oauth_pid', '', -1);                
+            }
 
-            unset($_SESSION['oauth_token']);
-            unset($_SESSION['oauth_token_secret']);
-            unset($_SESSION['oauth_pid']);
-
-            $_SESSION['oauth_pid'] = $id;
+            setcookie('oauth_pid', $id);
 
             $consumerkey = get_option(PWT_PLUGIN . '_twitter_consumerkey', '');
             $consumersecret = get_option(PWT_PLUGIN . '_twitter_consumersecret', '');
@@ -81,9 +82,9 @@ function pwt_download() {
             $request_token = $connection->getRequestToken(get_option('siteurl') . '/' . PWT_PLUGIN . '/download/?id=' . $id . '&action=callback');
 
             /* Save temporary credentials to session. */
-            $_SESSION['oauth_token'] = $token = $request_token['oauth_token'];
-            $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
-
+            setcookie('oauth_token', $request_token['oauth_token']);
+            setcookie('oauth_token_secret', $request_token['oauth_token_secret']);
+            $token = $request_token['oauth_token'];
             /* If last connection failed don't display authorization link. */
             if ($connection->http_code == 200) {
                 /* Build authorize URL and redirect user to Twitter. */
@@ -100,17 +101,18 @@ function pwt_download() {
             break;
 
         case 'callback' :
-            //$_SESSION['oauth_pid'] = $project->pid;
 
-            if ($_SESSION['oauth_pid'] != $_GET['id']) {
+            if ($_COOKIE['oauth_pid'] != $_GET['id']) {
 
                 exit;
             }
 
             /* If the oauth_token is old redirect to the connect page. */
-            if (isset($_REQUEST['oauth_token']) && $_SESSION['oauth_token'] !== $_REQUEST['oauth_token']) {
-                unset($_SESSION['oauth_token']);
-                unset($_SESSION['oauth_token_secret']);
+            if (isset($_REQUEST['oauth_token']) && $_COOKIE['oauth_token'] !== $_REQUEST['oauth_token']) {
+                setcookie('oauth_token', '', -1);
+                setcookie('oauth_token_secret', '', -1);
+                setcookie('oauth_pid', '', -1);
+            
                 define('WP_USE_THEMES', true);
                 $template = apply_filters('template_include', get_404_template());
                 include( $template );
@@ -124,7 +126,7 @@ function pwt_download() {
             $consumersecret = get_option(PWT_PLUGIN . '_twitter_consumersecret', '');
 
             /* Create TwitteroAuth object with app key/secret and token key/secret from default phase */
-            $connection = new TwitterOAuth($consumerkey, $consumersecret, $_SESSION['oauth_token'], $_SESSION['oauth_token_secret']);
+            $connection = new TwitterOAuth($consumerkey, $consumersecret, $_COOKIE['oauth_token'], $_COOKIE['oauth_token_secret']);
 
 
             /* Request access tokens from twitter */
@@ -137,9 +139,9 @@ function pwt_download() {
             $status = $connection2->post('statuses/update', array('status' => $button[0]->message));
 
             /* Remove no longer needed request tokens */
-            unset($_SESSION['oauth_token']);
-            unset($_SESSION['oauth_token_secret']);
-            unset($_SESSION['oauth_pid']);
+            setcookie('oauth_token', '', -1);
+            setcookie('oauth_token_secret', '', -1);
+            setcookie('oauth_pid', '', -1);
 
             /* If HTTP response is 200 continue otherwise send to connect page to retry */
             if ($connection2->http_code == 200) {

@@ -3,7 +3,7 @@
   Plugin Name: Pay With a Tweet
   Plugin URI: http://rolandocaldas.com/proyectos/wordpress/pay-with-a-tweet
   Description: Create buttons so that your visitors can download files after posting on his twitter the message you choose. You can display different buttons using shortcodes or the widget included. <a href="http://rolandocaldas.com/proyectos/wordpress/pay-with-a-tweet" target="_blank">Documentation</a>
-  Version: 1.0
+  Version: 1.0.1
   Author: Rolando Caldas Sánchez
   Author URI: http://rolandocaldas.com/
   License: License: GPL2

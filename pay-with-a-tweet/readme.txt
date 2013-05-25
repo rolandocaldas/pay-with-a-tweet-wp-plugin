@@ -4,7 +4,7 @@ Donate link:
 Tags: social, viral, social marketing, viral marketing, twitter, download, pay with a tweet, tweet to download, tweet and get it, plugin, plugins, shortcode, shortcodes, widget, widgets
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ Create buttons so that your visitors can download files after posting on his twi
 = Some Features =
 
 * Manage downloads
-  * Files for use on "Pay with a Tweet" will be uploaded from the [upload files screen](http://www.example.com/wp-admin/admin.php?page=pay-with-tweet/admin/pwt-upload.php).
+  * Files for use on "Pay with a Tweet" will be uploaded from the [upload files screen](http://www.example.com/wp-admin/admin.php?page=pay-with-a-tweet/admin/pwt-upload.php).
   * For uploading files using the file upload system WordPress.
   * The uploaded files are not part of the WordPress media manager.
   * Files are not accessible via web.
@@ -30,7 +30,7 @@ Create buttons so that your visitors can download files after posting on his twi
   * Each button can set a title, the button image to use as button and the text to publish as tweet.
   * The buttons can be deleted or permanently delete. This second option will delete the image and file.
 * Multiple languages support
-  *The plugin includes English and Spanish. Furthermore, in pay-with-a-tweet-wp-plugin/tree/master/pay-with-tweet/languages ​​directory the .po is available for translation in other languages
+  *The plugin includes English and Spanish. Furthermore, in pay-with-a-tweet-wp-plugin/tree/master/pay-with-a-tweet/languages ​​directory the .po is available for translation in other languages
 * Shortcodes
   * The plugin includes the shortcode `[pwt id ='']` to add the button anywhere in a post or page.
 * Widget
@@ -40,9 +40,9 @@ Create buttons so that your visitors can download files after posting on his twi
 
 == Installation ==
 
-1. Upload `pay-with-tweet` folder to the `/wp-content/plugins/` directory
+1. Upload `pay-with-a-tweet` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to pay-with-tweet configuration page and fill the fields. Video tutorial:
+3. Go to pay-with-a-tweet configuration page and fill the fields. Video tutorial:
 
 http://www.youtube.com/watch?v=AO1_-vrLPZ0
 
@@ -71,12 +71,18 @@ http://www.youtube.com/watch?v=AO1_-vrLPZ0
 
 == Changelog ==
 
+= 1.0.1 =
+
+Fix issue with folder name of plugin.
+Fix issue $_SESSION, changed to $_COOKIE
+
 = 1.0 =
 Initial version
 
 == Upgrade notice ==
 
-
+Just override the plugin files.
+Go to /wp-content/uploads/ and rename pay-with-tweet folder to pay-with-a-tweet
 
 == Features ==
 
@@ -84,11 +90,11 @@ Initial version
 
 To use the plugin you must create a Twitter application and add the `key consumer` and `consumer secret`.
 
-When creating the Twitter application is necessary to properly set the `callback URL`. This address is in the plugin [Configuration screen](http://www.example.com/wp-admin/admin.php?page=pay-with-tweet/admin/pwt-config.php).
+When creating the Twitter application is necessary to properly set the `callback URL`. This address is in the plugin [Configuration screen](http://www.example.com/wp-admin/admin.php?page=pay-with-a-tweet/admin/pwt-config.php).
 
 = Manage downloads =
 
-* Files for use on "Pay with a Tweet" will be uploaded from the [upload files screen](http://www.example.com/wp-admin/admin.php?page=pay-with-tweet/admin/pwt-upload.php).
+* Files for use on "Pay with a Tweet" will be uploaded from the [upload files screen](http://www.example.com/wp-admin/admin.php?page=pay-with-a-tweet/admin/pwt-upload.php).
 * For uploading files using the file upload system WordPress.
 * The uploaded files are not part of the WordPress media manager.
 * Files are not accessible via web.
@@ -103,7 +109,7 @@ When creating the Twitter application is necessary to properly set the `callback
 
 = Multiple languages support =
 
-The plugin includes English and Spanish. Furthermore, in pay-with-a-tweet-wp-plugin/tree/master/pay-with-tweet/languages ​​directory the .po is available for translation in other languages
+The plugin includes English and Spanish. Furthermore, in pay-with-a-tweet-wp-plugin/tree/master/pay-with-a-tweet/languages ​​directory the .po is available for translation in other languages
 
 = Shortcodes =
 

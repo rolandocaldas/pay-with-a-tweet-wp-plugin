@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="Pay With A Tweet">
-  <file path="pay-with-tweet.php" hash="07a5deb9fef6179ffb3d0b1ddbfb583b" package="Pay With a Tweet">
+  <file path="pay-with-a-tweet.php" hash="07a5deb9fef6179ffb3d0b1ddbfb583b" package="Pay With a Tweet">
     <docblock line="27">
-      <description>pay-with-tweet.php</description>
+      <description>pay-with-a-tweet.php</description>
       <long-description>&lt;p&gt;File that load all the info and options of the pay with a tweet plugin&lt;/p&gt;</long-description>
       <tag line="27" name="author" description="Rolando Caldas Sánchez &lt;rolando.caldas@gmail.com&gt;"/>
       <tag line="27" name="package" description="Pay With a Tweet"/>
@@ -33,7 +33,7 @@
     <constant namespace="global" line="42" package="Pay With a Tweet">
       <name>PWT_PLUGIN</name>
       <full_name>\PWT_PLUGIN</full_name>
-      <value>'pay-with-tweet'</value>
+      <value>'pay-with-a-tweet'</value>
     </constant>
     <constant namespace="global" line="43" package="Pay With a Tweet">
       <name>PWT_PLUGIN_VERSION</name>
@@ -58,12 +58,12 @@
     <constant namespace="global" line="47" package="Pay With a Tweet">
       <name>PWT_PLUGIN_UPLOAD_DIR</name>
       <full_name>\PWT_PLUGIN_UPLOAD_DIR</full_name>
-      <value>WP_CONTENT_DIR . '/uploads/pay-with-tweet'</value>
+      <value>WP_CONTENT_DIR . '/uploads/pay-with-a-tweet'</value>
     </constant>
     <constant namespace="global" line="48" package="Pay With a Tweet">
       <name>PWT_PLUGIN_UPLOAD_URL</name>
       <full_name>\PWT_PLUGIN_UPLOAD_URL</full_name>
-      <value>WP_CONTENT_URL . '/uploads/pay-with-tweet'</value>
+      <value>WP_CONTENT_URL . '/uploads/pay-with-a-tweet'</value>
     </constant>
     <source>eJylVlFv4jgQfu+vGPUFWtEEuto9qe32NkuhjcQCCmFRnyI3cYhVY0e2A8f9m/st98du7ATo7pbrVfeAlIxnvhnP982Em9/Lojzxz08AprxaMgFjsqJXMCVbWDBTAIF4Q6k5nM+j8AoKY8or31eSE5HJlPCMaC+VK79UcktTI7W/kSorFdXaL8n2YoNYF+TCNFh3VKeKlYZJcQV9RYmh8FQZI4UGLcEUxMBWVgrWTDMjlYaUCMjkRnBJMsgZpxpIbqiCUmrDxBKkgIJpMJjJmk1BYYXZyZJaJEgLKTX14NE+WyymS46XzFieU0WF2eevtIXThVQmlRnmkTXahmVLaoCJlFcZzTy4IVAomn8+/V/dOAVDFAJ/Pk2eMP759PZOptUKKyK2PTc+ucWGfadKu2b1vC6+BpXB+q4gqlNC3+WE2d9/ibSgf+493mAL/UYspUIj4/uH++no8gRP+rLcKrYsDFx2ex+OpYJ2A+vVuF+WK8K4RT+zILHlBNuwVGQF+JgrSpHh3GyIotc1M8iGosiHUQw5oMAMIKCP1a8k0rNFGDRVImtoRXpXyEruXu7Hc7ingirCYVo9cZbubtKBdd00uOwA0YhS2nNd0Ayeti54aKuZNdXAUGIO13TvtdIPFWYoAhdfyJLWYsUCN4xzeKKoH5pXvIMI6AuLMH6YzGMIxo+wCKIoGMeP12AFIPGUrmmNxFYlZwiMhSgizBavhwDfBlH/ASOCr+EojB+tEodhPB7MZjCcRBDANIjisD8fBRFM59F0Mht4ADNqi6IYf7w5kLv24q0zapAw7a5shwOFX/EMCrKmSEtK2RrLIpCiGt7uOWIQLnF87AXR99DBa2A5CGk6sFEMSTbyVwYw+sBBB0KReh342EMnnAuOPZ9h+JDlCD3kUqoOfMXht67fAoDuZa/Xveh96PYA5rPgBM79E9xsuNrOYT90buQ8u/PQan9DXCU1hW6zEOTQ8SFyaVUI0i2pvdwQqL4bAQcFpduKO7QvpB67Y8Nyc2xYbl10SdJnu7B+3b54uFOz2wD4jmsqpfu3dD+t7fTMTWznpyqcG2/ob1YC6ldo3LMp9aRa+s2p9nEHXFx63XoX2Di3cZ3jrq8onJwJ2jQA9SG0QeVqe1wftVvTRZxMR/P7cNzqQOtHElpn16/4Jd8H0SycOH+82hEnFHoYN16fvN8+HXML4gd0qStMMqaSkpiinSTDcDRIkrPXo+bR6MegSvE3Y6ajSXCX3IURhi6mSX8yjgfj2BrAg5ZflVZdL5b/v7WgAavreAGGhjfALC1Oxsj7srJKQjKsIWmuY+gfJpMoOtE+JOxATrjdlweTy7MD0Tvo5tO3o9xpAhM05kSiHts/td8C4blPUrdXcfAs2H+JQHRc9O+KqITLot8TVH/V3xOx/2fwniBmp4PzXUjdTWfCj4h83rUUu6noEj80VCW2ZWu3ChPr0oadBu0obUzSxLegwcM3ZV4AkSxL6ra3sQRmWk1cIwVnsqH/AL5wTuU=</source>
   </file>
